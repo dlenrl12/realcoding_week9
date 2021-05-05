@@ -164,7 +164,7 @@ public class MockServiceTest {
         List<Champion> champs = new ArrayList<>();
         champs.add(new Champion("모데카이저", "탑", 3));
         champs.add(new Champion("리신", "정글", 3));
-        champs.add(new Champion("애니비아", "미드", 3));
+        champs.add(new Champion("아리", "미드", 3));
 
         when(mockService.findAllChampions()).thenReturn(champs);
         assertThat(mockService.findAllChampions().size(), is(3));
@@ -185,7 +185,7 @@ public class MockServiceTest {
         List<Champion> champs = new ArrayList<>();
         champs.add(new Champion("모데카이저", "탑", 3));
         champs.add(new Champion("리신", "정글", 3));
-        champs.add(new Champion("애니비아", "미드", 3));
+        champs.add(new Champion("아리", "미드", 3));
 
         when(mockService.findAllChampions()).thenReturn(champs);
         assertThat(mockService.findAllChampions().get(0).getName(), is("모데카이저"));
